@@ -1,0 +1,15 @@
+subscriptionKey=YOUR_API_KEY_HEE
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2
+hibernate.dialect=org.hibernate.dialect.H2Dialect
+spring.datasource.url=jdbc:h2:file:./db/fadedetection_db
+spring.datasource.username=sa
+spring.h2.console.password=
+spring.datasource.driver-class-name=org.h2.Driver
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
+imageDestination=/Users/nana/testing/face-recognition
+spring.servlet.multipart.max-file-size=128000KB
+spring.servlet.multipart.max-request-size=128000KB
+server.contextPath=/
+
