@@ -1,11 +1,121 @@
 
 
 body {
-  background-color: white;
+
   font-family: 'Raleway', sans-serif;
 }
 .navigation  {
   margin: 0;
   padding: 0;
+
+      background-color: white;
+      .navigation:hover{
+        transition: 1.5s;
+        color: black;
+      }
+}
+
+.footer{
+background-image: url('http://localhost:8080/images/hypnotize.png');
+  background-size:  repeat;
+    border: 1px solid LightGrey;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
+  }
+
+
+#banner {
+  background-image: url('http://localhost:8080/images/hypnotize.png');
+  background-size:  repeat;
+
+
+  height: 400px;
+  width: 100%;
+}
+
+#banner .content h1 {
+
+  position: relative;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #534B62;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
 }
+
+
+.share {
+  border: 1px solid LightGrey;
+  padding: 40px 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+   position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+       }
+
+.share input {
+  background: #D0BCD5;
+  border: 1px solid #D0BCD5;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.share input:hover {
+  background: white;
+  border: 1px solid #226CE0;
+  color: #226CE0;
+}
+
+h2 {
+  border: 1px dotted #534B62;
+  color: #534B62;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 20px 30px;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+#main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 600px;
+  height: 1000px;
+  overflow: scroll;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+  padding: 10px 20px;
+   list-style-type: none;
+}
+
+
+
+
+
+
+

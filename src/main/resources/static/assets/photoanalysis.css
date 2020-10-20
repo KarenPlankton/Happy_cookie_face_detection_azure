@@ -1,0 +1,110 @@
+body {
+
+  font-family: 'Raleway', sans-serif;
+
+
+}
+.navigation  {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+
+        transition: 1.5s;
+
+
+}
+.navigation:hover{
+  transition: 1.5s;
+  color: black;
+}
+
+h3 {
+  color: #534B62;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  color: grey;
+  font-size: 16px;
+  line-height: 48px;
+  margin-top: 60px;
+  padding: 10px 20px;
+   list-style-type: none;
+}
+
+
+
+#main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 600px;
+  height: 1000px;
+  overflow: scroll;
+  background-color: white;
+}
+
+.footer{
+background-image: url('http://localhost:8080/images/hypnotize.png');
+  background-size:  repeat;
+    border: 1px solid LightGrey;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
+  }
+
+h2 {
+  border: 1px dotted #534B62;
+  color: #534B62;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 20px 30px;
+  margin: 30px 20px;
+  text-align: center;
+
+}
+
+#banner {
+  background-image: url('http://localhost:8080/images/hypnotize.png');
+    background-size:  repeat;
+    height: 400px;
+    width: 100%;
+}
+
+#banner .content  {
+
+  position: absolute;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.container {
+background-image: url('http://localhost:8080/images/hypnotize.png');
+  background-size:  repeat;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #1B1725;
+  position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+
+
+
+
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link  href="http://localhost:8080/assets/photomanagement.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Photo Management page</title>
+</head>
+<body>
+
+<nav  class="navigation">
+
+    <div id="menu"></div>
+</nav>
+
+
+<div id="banner">
+    <div class="content">
+
+        <h1>Welcome to photo management section. You can add a new photo or delete an existing one</h1>
+    </div>
+</div>
+
+
+    <div class="share">
+        <form action="http://localhost:8080/photoImageUpload" method="POST" enctype="multipart/form-data">
+            <input type="file" id="file" name="file">
+            <input type="submit">
+        </form>
+    </div>
+
+
+<div id="main" >
+        <h2>List of existing photos</h2>
+
+    <p id="photomanagement"></p>
+
+    </div>
+
+<div class="footer"></div>
+
+
+
+
+</body>
+</html>
+
+
+

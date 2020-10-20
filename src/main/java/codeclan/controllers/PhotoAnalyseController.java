@@ -1,7 +1,6 @@
-package codeclan.rest;
+package codeclan.controllers;
 
 import codeclan.facedetector.FaceApi;
-import codeclan.models.Photo;
 import codeclan.models.PhotoAnalyse;
 import codeclan.models.StatisticsAnalysis;
 import codeclan.repositories.PhotoAnalyseRepository;
@@ -19,7 +18,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.view.RedirectView;
 
-import java.io.File;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
