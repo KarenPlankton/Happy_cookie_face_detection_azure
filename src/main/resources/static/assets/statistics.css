@@ -1,0 +1,44 @@
+
+.navigation:hover{
+  transition: 1.5s;
+  color: black;
+
+}
+
+#main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 600px;
+  height: 500px;
+  overflow: scroll;
+}
+
+h2 {
+  border: 1px dotted #534B62;
+  color: #534B62;
+  font-size: 20px;
+  line-height: 48px;
+  padding: 20px 30px;
+
+  text-align: center;
+  width: 600px;
+
+  margin: auto;
+
+
+}
+
+.footer{
+background-image: url('http://localhost:8080/images/hypnotize.png');
+  background-size:  repeat;
+    border: 1px solid LightGrey;
+    padding: 40px 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
+  }
+

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Chart from 'react-apexcharts';
 import style from './Menu.css';
+import pDetails from './PhotoDetails.css';
 
 class StatisticsAnalysis extends Component {
    constructor(props) {
@@ -88,15 +89,32 @@ render() {
          <Chart options={genderOptions} series={genderSeries} height={350} type="pie" />
          <Chart options={ageOptions} series={ageSeries} height={350} type="pie" />
          <Chart options={emotionOptions} series={emotionSeries} height={350} type="pie" />
-            <ul>Percentage Male: {(Math.round(items.percentageMale * 100) ).toFixed(2)}% Percentage Female: {(Math.round(items.percentageFemale*100) ).toFixed(2)}%</ul>
-            <ul>Percentage 10 to 30: {(Math.round(items.percentage1030 * 100) ).toFixed(2)}% Percentage 30 to 50: {(Math.round(items.percentage3050*100) ).toFixed(2)}%</ul>
-            <ul>Percentage 50 to 70: {(Math.round(items.percentage5070*100) ).toFixed(2)}% Percentage 70 plus: {(Math.round(items.percentage70plus*100) ).toFixed(2)}%</ul>
-            <ul>Anger percentage: {(Math.round(items.percentageAnger*100) ).toFixed(2)}% Contempt percentage: {(Math.round(items.percentageContempt*100) ).toFixed(2)}%</ul>
-            <ul>Disgust percentage: {(Math.round(items.percentageDisgust*100) ).toFixed(2)}% Fear percentage: {(Math.round(items.percentagefear*100) ).toFixed(2)}%</ul>
-            <ul>Happiness percentage: {(Math.round(items.percentageHappiness*100) ).toFixed(2)}% Neutral percentage: {(Math.round(items.percentageNeutral*100) ).toFixed(2)}%</ul>
-            <ul>Sadness percentage: {(Math.round(items.percentageSadness*100) ).toFixed(2)}% Surprise percentage: {(Math.round(items.percentageSurprise*100) ).toFixed(2)}%</ul>
-            <ul></ul>
-            <ul>Please use this <a href="http://localhost:3100/statisticsRecords.html">link</a> if you want to view the statistics record</ul>
+            <ul>Percentage Male: {(Math.round(items.percentageMale * 100) ).toFixed(2)}% </ul>
+            <ul>Percentage Female: {(Math.round(items.percentageFemale*100) ).toFixed(2)}%</ul>
+            <ul>Percentage 10 to 30: {(Math.round(items.percentage1030 * 100) ).toFixed(2)}% </ul>
+            <ul>Percentage 30 to 50: {(Math.round(items.percentage3050*100) ).toFixed(2)}%</ul>
+            <ul>Percentage 50 to 70: {(Math.round(items.percentage5070*100) ).toFixed(2)}% </ul>
+            <ul>Percentage 70 plus: {(Math.round(items.percentage70plus*100) ).toFixed(2)}%</ul>
+            <ul>Anger percentage: {(Math.round(items.percentageAnger*100) ).toFixed(2)}% </ul>
+            <ul>Contempt percentage: {(Math.round(items.percentageContempt*100) ).toFixed(2)}%</ul>
+            <ul>Disgust percentage: {(Math.round(items.percentageDisgust*100) ).toFixed(2)}% </ul>
+            <ul>Fear percentage: {(Math.round(items.percentagefear*100) ).toFixed(2)}%</ul>
+            <ul>Happiness percentage: {(Math.round(items.percentageHappiness*100) ).toFixed(2)}% </ul>
+            <ul>Neutral percentage: {(Math.round(items.percentageNeutral*100) ).toFixed(2)}%</ul>
+            <ul>Sadness percentage: {(Math.round(items.percentageSadness*100) ).toFixed(2)}% </ul>
+
+            <ul>Surprise percentage: {(Math.round(items.percentageSurprise*100) ).toFixed(2)}%</ul>
+
+
+               <form>
+
+            <button type="submit" className={pDetails.button} formaction="http://localhost:3100/statisticsRecords.html"><span>Statistics Record</span></button>
+
+               </form>
+
+
+
+
 
          </div>
       );

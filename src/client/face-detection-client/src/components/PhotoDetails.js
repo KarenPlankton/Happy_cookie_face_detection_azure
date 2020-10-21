@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import style from './Menu.css';
+import pDetails from './PhotoDetails.css';
 
 class PhotoDetails extends Component {
    constructor(props) {
@@ -75,24 +76,25 @@ render() {
    var{isLoaded,items,photo,analysis}= this.state;
       return (
         <div className={style.PhotoManagement}>
-            <p>Photo Details</p>
+            <h2 className={pDetails.photoDetails}>Photo Details</h2>
             <ul>Id: {items.id}</ul><ul> Name: {items.imageName}</ul>
-            <ul><img src={photo} alt={items.imageName} height="60%" width="60%" /></ul>
-            <ul>Analysis:</ul>
+            <ul className="image"><img src={photo} alt={items.imageName} height="60%" width="60%" /></ul>
+            <ul className={pDetails.analysis} id="analysis">Analysis Basics:</ul>
             {analysis.map( blah =>
-            <div>   <ul>Age/Sex</ul>
+            <div>
                     <ul>Age: {blah.faceAttributes.age}</ul>
                     <ul>Gender: {blah.faceAttributes.gender}</ul>
-                    <ul>Facial Characteristics</ul>
+
+                    <ul className={pDetails.facial}>Facial Characteristics</ul>
                     <ul>Glasses: {blah.faceAttributes.glasses}</ul>
                     <ul>Baldness: {blah.faceAttributes.hair.bald}</ul>
                     <ul>Beard: {blah.faceAttributes.facialHair.beard}</ul>
                     <ul>Moustache: {blah.faceAttributes.facialHair.moustache}</ul>
                     <ul>Sideburns: {blah.faceAttributes.facialHair.sideburns}</ul>
-                    <ul>Makeup</ul>
-                    <ul>EyeMakeup: {blah.faceAttributes.makeup.eyeMakeup}</ul>
-                    <ul>LipMakeup: {blah.faceAttributes.makeup.lipMakeup}</ul>
-                    <ul>Emotions</ul>
+
+
+
+                    <ul className={pDetails.emotions}>Emotions</ul>
                     <ul>Anger: {blah.faceAttributes.emotion.anger}</ul>
                     <ul>Contempt: {blah.faceAttributes.emotion.contempt}</ul>
                     <ul>Disgust: {blah.faceAttributes.emotion.disgust}</ul>
@@ -104,7 +106,9 @@ render() {
             </div>
                 )
             }
-            <ul><a href={"http://localhost:8080/saveAnalysisDeletePhoto/"+items.id}>Save analysis and delete photo</a></ul>
+            <form>
+            <button type="submit" className={pDetails.button}  formaction={"http://localhost:8080/saveAnalysisDeletePhoto/"+items.id}><span>Save analysis and delete photo</span></button>
+            </form>
         </div>
       );
 }

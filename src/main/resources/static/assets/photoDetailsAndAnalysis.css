@@ -1,0 +1,47 @@
+#banner {
+  background-image: url('http://localhost:8080/images/hypnotize.png');
+  background-size:  repeat;
+  height: 400px;
+  width: 100%;
+
+}
+
+#banner .content h1 {
+
+  position: relative;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #534B62;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 600px;
+  height: 800px;
+  overflow: scroll;
+}
+
+#banner .content h2 {
+
+  position: relative;
+  top: 50px;
+  width: 850px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #534B62;;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 25px;
+  margin: 0 auto;
+  }
