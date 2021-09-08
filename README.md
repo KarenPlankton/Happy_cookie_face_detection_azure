@@ -1,3 +1,4 @@
+[codeclan-presentation.pptx](https://github.com/KarenPlankton/Happy_cookie_face_detection_azure/files/7130856/codeclan-presentation.pptx)
 # face detection  azure microsoft
 Spring Boot Application using springboot back end with js front end. 
 To use rename application.properties-sample to application.properties file and add your key from:
