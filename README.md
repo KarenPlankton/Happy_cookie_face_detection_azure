@@ -17,3 +17,4 @@ HAPPY COOKIE is a face detection app that can help you identify your customer ba
 Front end : React and Apex Charts 
  Middle Ware : Spring interfacing with Microsoft Azure Face Detection API
 Back End: H2 DB
+Download the attached codeclan_presentation for more details.
